@@ -11,12 +11,12 @@ body{
   background-color: #F8F8F8;
 }
 
-.intro,
+/* .intro,
 .dataPrep,
 .PyCode{
   display: flex;
   height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
-}
+} */
+

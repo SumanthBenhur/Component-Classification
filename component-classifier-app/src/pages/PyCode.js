@@ -1,9 +1,15 @@
 import React from 'react';
+import PageHeading from '../components/PageHeading';
+import { Container, Row } from 'react-bootstrap';
 
 function PyCode() {
   return (
-    <div className='PyCode'>
-      <h1>Python Implementation</h1>
+    <div className='page'>
+      <Container>
+        <Row>
+        <PageHeading PageHeading = "Python Implementation" />
+        </Row>
+      </Container>
     </div>
   );
 }
