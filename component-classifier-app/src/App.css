@@ -1,7 +1,22 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
-  color: #eaecef;
+  font-family: 'Lato', sans-serif;
+}
+
+body{
+  background-color: #F8F8F8;
+}
+
+.intro,
+.dataPrep,
+.PyCode{
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
 }
