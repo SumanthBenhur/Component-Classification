@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Introduction from './pages/Introduction';
 import DataPrep from './pages/DataPrep';
 import PyCode from './pages/PyCode';
+import Predictions from './pages/Predictions';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' exact component={Introduction} />
           <Route path='/preparation' component={DataPrep} />
           <Route path='/pycode' component={PyCode} />
+          <Route path= '/predictions' component={Predictions} />
         </Switch>
       </Router>
     </>

@@ -21,5 +21,11 @@ export const SidebarData = [
     path: '/pycode',
     icon: <FaIcons.FaPython/>,
     cName: 'nav-text'
+  },
+  {
+    title : 'Predictions',
+    path : "/predictions",
+    icon : <FaIcons.FaPython/>,
+    cName : 'nav-text'
   }
 ];
