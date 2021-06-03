@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import SubHeading from "./SubHeading";
-import "./componentCss/formInput.css";
+
 
 function FormInput() {
   const [data, setData] = useState({
@@ -37,7 +36,7 @@ function FormInput() {
   return (
     <div>
       {/*  drop down box  */}
-      <SubHeading SubHeading="Select which algorithm to use for prediction" />
+      <h2>slect your algo</h2>
       <select
         name="userOption"
         className="form-select w-50 h-50"
@@ -51,7 +50,7 @@ function FormInput() {
         <option value="SVM">SVM</option>
       </select>
 
-      <SubHeading SubHeading="Features" />
+      
       <div className="mb-3 w-25">
         <label for="exampleInputEmail1" className="form-label">
           Length
