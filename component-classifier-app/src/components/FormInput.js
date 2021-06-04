@@ -96,6 +96,11 @@ function FormInput() {
       <button
         type="submit"
         className="btn btn-primary "
+        style = {
+          {
+            margin : "30px"
+          }
+        }
         onClick={() => {
           fetch(url, {
             method: "GET",
