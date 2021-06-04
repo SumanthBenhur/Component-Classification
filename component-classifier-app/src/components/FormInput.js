@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-
 function FormInput() {
   const [data, setData] = useState({
     userOption: "",
@@ -36,10 +35,12 @@ function FormInput() {
   return (
     <div>
       {/*  drop down box  */}
-      <h2>slect your algo</h2>
+      <label for="UserOption" className="form-label">
+          Select an algorithm
+        </label>
       <select
         name="userOption"
-        className="form-select w-50 h-50"
+        className="form-select form-control col-lg-3 col-sm-10"
         aria-label="Default select example"
         onChange={handleChange}
       >
@@ -50,9 +51,8 @@ function FormInput() {
         <option value="SVM">SVM</option>
       </select>
 
-      
-      <div className="mb-3 w-25">
-        <label for="exampleInputEmail1" className="form-label">
+      <div className="col-lg-3 col-sm-10">
+        <label for="length" className="form-label">
           Length
         </label>
         <input
@@ -65,8 +65,8 @@ function FormInput() {
         />
       </div>
 
-      <div className="mb-3 w-25">
-        <label for="exampleInputEmail1" className="form-label">
+      <div className="col-lg-3 col-sm-10">
+        <label for="width" className="form-label">
           Width
         </label>
         <input
@@ -79,8 +79,8 @@ function FormInput() {
         />
       </div>
 
-      <div className="mb-3 w-25">
-        <label for="exampleInputEmail1" className="form-label">
+      <div className="col-lg-3 col-sm-10">
+        <label for="thickenss" className="form-label">
           Thickness
         </label>
         <input

@@ -2,9 +2,9 @@ import React from 'react';
 function DataPrep() {
 
   return (
-    
-
-    <h1>data prep</h1>
+    <>
+    <h1>Data Preparation</h1>
+    </>
   );
 }
 
