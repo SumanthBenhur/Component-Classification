@@ -5,6 +5,11 @@ function KNN() {
     <>
       <h2>K - nearest neighbours</h2>
       <p class="lead">
+        K Nearest Neighbors (popularly KNN) is another supervised learning
+        technique used for classification use cases. KNN assumes that similar
+        things are closer to each other and classifies them accordingly.
+      </p>
+      <p class="lead">
         Accuracy: 0.7062058130400628
         <br />
         F1 Score: 0.7574578469520105

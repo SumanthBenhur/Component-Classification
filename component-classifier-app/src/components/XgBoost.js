@@ -6,6 +6,15 @@ function XGBoost() {
     <>
       <h2>XG Boost</h2>
       <p class="lead">
+        XGBoost is the latest sensation among ML algorithms. XGBoost stands for
+        Extreme Gradient Boosting. As the name suggests, boosting means
+        improving or making better than before. XGBoost is an ensemble learning
+        technique, which means it makes use of many base learners/weak learners
+        and improves their performance via boosting and uses them collectively
+        to get the best possible prediction/output. This algorithm is a
+        sequential ensemble boosting technique.{" "}
+      </p>
+      <p class="lead">
         Accuracy: 0.7360565593087196
         <br />
         F1 Score: 0.7980769230769231
