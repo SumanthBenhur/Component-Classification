@@ -17,8 +17,10 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-
+import HomeIcon from '@material-ui/icons/Home';
+import StorageIcon from '@material-ui/icons/Storage';
+import DataUsageIcon from '@material-ui/icons/DataUsage';
+import DoneOutlineIcon from '@material-ui/icons/DoneOutline';
 
 const drawerWidth = 240;
 
@@ -108,25 +110,25 @@ function MiniDrawer(props) {
     {
       title: 'Introduction',
       path: '/',
-      icon: <AiIcons.AiFillHome />,
+      icon: <HomeIcon/>,
       onClickItem : ()=>history.push('/')
     },
     {
       title: 'Data Preparation',
       path: '/preparation',
-      icon: <AiIcons.AiFillDatabase />,
+      icon: <StorageIcon />,
       onClickItem : ()=>history.push('/preparation')
     },
     {
       title: 'Data Visualisation',
       path: '/visualisation',
-      icon: <FaIcons.FaPython/>,
+      icon: <DataUsageIcon/>,
       onClickItem : ()=>history.push('/visualisation')
     },
     {
       title : 'Predictions',
       path : "/predictions",
-      icon : <FaIcons.FaPython/>,
+      icon : <DoneOutlineIcon/>,
       onClickItem : ()=>history.push("/predictions")
   
     }
@@ -185,6 +187,7 @@ function MiniDrawer(props) {
               <ListItemText primary={item.title} />
               
             </ListItem>
+            
           ))}
         </List>
       </Drawer>
