@@ -118,10 +118,10 @@ function MiniDrawer(props) {
       onClickItem : ()=>history.push('/preparation')
     },
     {
-      title: 'Python Code',
-      path: '/pycode',
+      title: 'Data Visualisation',
+      path: '/visualisation',
       icon: <FaIcons.FaPython/>,
-      onClickItem : ()=>history.push('/pycode')
+      onClickItem : ()=>history.push('/visualisation')
     },
     {
       title : 'Predictions',

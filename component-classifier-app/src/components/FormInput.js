@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-
+import LinearLearner from "./Linearlearner";
+import XGBoost from "./XgBoost";
+import KNN from './Knn';
+import SVM from './Svm';
 function FormInput() {
   const [data, setData] = useState({
     userOption: "",
@@ -32,90 +35,105 @@ function FormInput() {
     "&thickness=" +
     data.thickness;
 
+    function renderDesc(){
+      if(data.userOption === "XGBoost") return <XGBoost />;
+      else if(data.userOption === "KNN") return <KNN />;
+      else if(data.userOption === "SVM") return <SVM />;
+      else if(data.userOption === "LinearLearner") return <LinearLearner />;
+      else return null;
+    }
   return (
-    <div>
-      {/*  drop down box  */}
-      <label for="UserOption" className="form-label">
-          Select an algorithm
-        </label>
-      <select
-        name="userOption"
-        className="form-select form-control col-lg-3 col-sm-10"
-        aria-label="Default select example"
-        onChange={handleChange}
-      >
-        <option>Choose an option</option>
-        <option value="XGBoost">XG Boost</option>
-        <option value="KNN">KNN</option>
-        <option value="LinearLearner">Linear Learner</option>
-        <option value="SVM">SVM</option>
-      </select>
+    <>
+      <h1 class="display-4">Prediction and algorithm analysis</h1>
+      <div class="row" style = {{marginTop: "20px"}}>
+        <div class="form-group col-lg-3 col-sm-12">
+          {/*  drop down box  */}
+          <label for="UserOption" className="form-label">
+            Select an algorithm
+          </label>
+          <select
+            name="userOption"
+            className="form-select form-control"
+            aria-label="Default select example"
+            onChange={handleChange}
+          >
+            <option>Choose an option</option>
+            <option value="XGBoost">XG Boost</option>
+            <option value="KNN">KNN</option>
+            <option value="LinearLearner">Linear Learner</option>
+            <option value="SVM">SVM</option>
+          </select>
 
-      <div className="col-lg-3 col-sm-10">
-        <label for="length" className="form-label">
-          Length
-        </label>
-        <input
-          type="text"
-          name="length"
-          onChange={handleChange}
-          className="form-control"
-          aria-describedby="emailHelp"
-          value={data.length}
-        />
-      </div>
+          <div>
+            <label for="length" className="form-label">
+              Length
+            </label>
+            <input
+              type="text"
+              name="length"
+              onChange={handleChange}
+              className="form-control"
+              aria-describedby="emailHelp"
+              value={data.length}
+            />
+          </div>
 
-      <div className="col-lg-3 col-sm-10">
-        <label for="width" className="form-label">
-          Width
-        </label>
-        <input
-          name="width"
-          onChange={handleChange}
-          type="text"
-          className="form-control"
-          aria-describedby="emailHelp"
-          value={data.width}
-        />
-      </div>
+          <div>
+            <label for="width" className="form-label">
+              Width
+            </label>
+            <input
+              name="width"
+              onChange={handleChange}
+              type="text"
+              className="form-control"
+              aria-describedby="emailHelp"
+              value={data.width}
+            />
+          </div>
 
-      <div className="col-lg-3 col-sm-10">
-        <label for="thickenss" className="form-label">
-          Thickness
-        </label>
-        <input
-          name="thickness"
-          onChange={handleChange}
-          type="text"
-          className="form-control"
-          aria-describedby="emailHelp"
-          value={data.thickness}
-        />
-      </div>
+          <div>
+            <label for="thickenss" className="form-label">
+              Thickness
+            </label>
+            <input
+              name="thickness"
+              onChange={handleChange}
+              type="text"
+              className="form-control"
+              aria-describedby="emailHelp"
+              value={data.thickness}
+            />
+          </div>
 
-      <button
-        type="submit"
-        className="btn btn-primary "
-        style = {
+          <button
+            type="submit"
+            className="btn btn-primary "
+            style={{
+              marginTop: "30px",
+            }}
+            onClick={() => {
+              fetch(url, {
+                method: "GET",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              })
+                .then((response) => response.json())
+                .then((data) => setPred(data.body));
+            }}
+          >
+            Predict
+          </button>
+          <h5 style = {{padding :"30px"}}>{pred}</h5>
+        </div>
+        <div class="col-lg-9 col-sm-12" >
           {
-            margin : "30px"
+            renderDesc()
           }
-        }
-        onClick={() => {
-          fetch(url, {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-            },
-          })
-            .then((response) => response.json())
-            .then((data) => setPred(data.body));
-        }}
-      >
-        Predict
-      </button>
-      <h5>{pred}</h5>
-    </div>
+        </div>
+      </div>
+    </>
   );
 }
 

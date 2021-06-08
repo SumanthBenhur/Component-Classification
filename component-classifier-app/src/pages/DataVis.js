@@ -1,7 +1,7 @@
 import React from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-function PyCode() {
+function DataVis() {
   return (
     <>
       <h1>Python Implementation</h1>
@@ -9,4 +9,4 @@ function PyCode() {
   );
 }
 
-export default PyCode;
+export default DataVis;

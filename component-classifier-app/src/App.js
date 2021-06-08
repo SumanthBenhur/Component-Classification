@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Introduction from './pages/Introduction';
 import DataPrep from './pages/DataPrep';
-import PyCode from './pages/PyCode';
+import DataVis from './pages/DataVis';
 import Predictions from './pages/Predictions';
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
         <div className = 'container' style={{marginTop : '120px'}}>
           <Route path='/' exact component={Introduction} />
           <Route path='/preparation' component={DataPrep} />
-          <Route path='/pycode' component={PyCode} />
+          <Route path='/visualisation' component={DataVis} />
           <Route path= '/predictions' component={Predictions} />
         </div>
         </Switch>
