@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/Component-Classification/component-classifier-app/static/css/main.52371411.chunk.css",
+    "main.js": "/Component-Classification/component-classifier-app/static/js/main.8db0e360.chunk.js",
+    "main.js.map": "/Component-Classification/component-classifier-app/static/js/main.8db0e360.chunk.js.map",
+    "runtime-main.js": "/Component-Classification/component-classifier-app/static/js/runtime-main.183211a4.js",
+    "runtime-main.js.map": "/Component-Classification/component-classifier-app/static/js/runtime-main.183211a4.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/Component-Classification/component-classifier-app/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.143a85d7.chunk.js": "/Component-Classification/component-classifier-app/static/js/2.143a85d7.chunk.js",
+    "static/js/2.143a85d7.chunk.js.map": "/Component-Classification/component-classifier-app/static/js/2.143a85d7.chunk.js.map",
+    "index.html": "/Component-Classification/component-classifier-app/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/Component-Classification/component-classifier-app/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.52371411.chunk.css.map": "/Component-Classification/component-classifier-app/static/css/main.52371411.chunk.css.map",
+    "static/js/2.143a85d7.chunk.js.LICENSE.txt": "/Component-Classification/component-classifier-app/static/js/2.143a85d7.chunk.js.LICENSE.txt",
+    "static/media/clusterWith.8d5850ba.png": "/Component-Classification/component-classifier-app/static/media/clusterWith.8d5850ba.png",
+    "static/media/clusterWithout.4209a63b.png": "/Component-Classification/component-classifier-app/static/media/clusterWithout.4209a63b.png",
+    "static/media/dataFrame.761d7184.PNG": "/Component-Classification/component-classifier-app/static/media/dataFrame.761d7184.PNG",
+    "static/media/handlingMissingData.27021ee6.PNG": "/Component-Classification/component-classifier-app/static/media/handlingMissingData.27021ee6.PNG",
+    "static/media/knn.ed65ec59.png": "/Component-Classification/component-classifier-app/static/media/knn.ed65ec59.png",
+    "static/media/lenwidWithOutlierOG.69cde2b7.png": "/Component-Classification/component-classifier-app/static/media/lenwidWithOutlierOG.69cde2b7.png",
+    "static/media/lenwidWithoutOG.8907f3c6.png": "/Component-Classification/component-classifier-app/static/media/lenwidWithoutOG.8907f3c6.png",
+    "static/media/logreg.a126b8f8.png": "/Component-Classification/component-classifier-app/static/media/logreg.a126b8f8.png",
+    "static/media/outliers.55928809.jpeg": "/Component-Classification/component-classifier-app/static/media/outliers.55928809.jpeg",
+    "static/media/replaceNum.50b704da.jpeg": "/Component-Classification/component-classifier-app/static/media/replaceNum.50b704da.jpeg",
+    "static/media/step1.9438fe1e.jpeg": "/Component-Classification/component-classifier-app/static/media/step1.9438fe1e.jpeg",
+    "static/media/svm.9fa8ff1c.png": "/Component-Classification/component-classifier-app/static/media/svm.9fa8ff1c.png",
+    "static/media/withOutlier.e55e09fe.png": "/Component-Classification/component-classifier-app/static/media/withOutlier.e55e09fe.png",
+    "static/media/withoutOutlier.04376651.png": "/Component-Classification/component-classifier-app/static/media/withoutOutlier.04376651.png",
+    "static/media/xgboost.5f0a2116.png": "/Component-Classification/component-classifier-app/static/media/xgboost.5f0a2116.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.183211a4.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.143a85d7.chunk.js",
+    "static/css/main.52371411.chunk.css",
+    "static/js/main.8db0e360.chunk.js"
+  ]
+}
