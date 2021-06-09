@@ -48,7 +48,7 @@ function FormInput() {
       <div class="row" style = {{marginTop: "20px"}}>
         <div class="form-group col-lg-3 col-sm-12">
           {/*  drop down box  */}
-          <label for="UserOption" className="form-label">
+          <label for="UserOption" className="form-label" style = {{marginTop : "10px"}}>
             Select an algorithm
           </label>
           <select
@@ -65,7 +65,7 @@ function FormInput() {
           </select>
 
           <div>
-            <label for="length" className="form-label">
+            <label for="length" className="form-label" style = {{marginTop : "10px"}}>
               Length
             </label>
             <input
@@ -79,7 +79,7 @@ function FormInput() {
           </div>
 
           <div>
-            <label for="width" className="form-label">
+            <label for="width" className="form-label" style = {{marginTop : "10px"}}>
               Width
             </label>
             <input
@@ -93,7 +93,7 @@ function FormInput() {
           </div>
 
           <div>
-            <label for="thickenss" className="form-label">
+            <label for="thickenss" className="form-label" style = {{marginTop : "10px"}}>
               Thickness
             </label>
             <input
@@ -125,7 +125,7 @@ function FormInput() {
           >
             Predict
           </button>
-          <h5 style = {{padding :"30px"}}>{pred}</h5>
+          <h5 style = {{marginTop : "20px"}}>{pred}</h5>
         </div>
         <div class="col-lg-9 col-sm-12" >
           {
