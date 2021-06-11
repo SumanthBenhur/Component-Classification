@@ -20,3 +20,10 @@ A Machine Learning Solution in PLM domain for product data classification.
 > Material UI
 
 ### Screenshots of UI
+![Screenshot](UIimages/img1.png)
+
+![Screenshot](UIimages/img2.png)
+
+![Screenshot](UIimages/img3.png)
+
+![Screenshot](UIimages/img4.png)
